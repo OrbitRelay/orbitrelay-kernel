@@ -1,0 +1,20 @@
+[package]
+name = "orbitrelay-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Action validation, authorization, handler execution, and event materialization for OrbitRelay"
+
+[features]
+test-utils = []
+
+[dependencies]
+orbitrelay-core.workspace = true
+orbitrelay-protocol.workspace = true
+async-trait = "0.1"
+thiserror = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt", "sync", "time"] }

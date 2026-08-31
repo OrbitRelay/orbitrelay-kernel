@@ -1,0 +1,18 @@
+[package]
+name = "orbitrelay-asset-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Asset catalog and bounded byte-range access ports for OrbitRelay"
+
+[dependencies]
+async-trait = "0.1"
+bytes = "1"
+orbitrelay-asset.workspace = true
+sha2 = "0.10"
+thiserror = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync"] }

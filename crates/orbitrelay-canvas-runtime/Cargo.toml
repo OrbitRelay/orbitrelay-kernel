@@ -1,0 +1,19 @@
+[package]
+name = "orbitrelay-canvas-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Canvas catalog ports, state services, handlers, and execution coordination for OrbitRelay"
+
+[dependencies]
+orbitrelay-core.workspace = true
+orbitrelay-protocol.workspace = true
+orbitrelay-canvas.workspace = true
+orbitrelay-runtime.workspace = true
+async-trait = "0.1"
+thiserror = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt", "sync", "time"] }

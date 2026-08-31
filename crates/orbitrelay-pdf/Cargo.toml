@@ -1,0 +1,21 @@
+[package]
+name = "orbitrelay-pdf"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Verified PDF metadata inspection and normalized page geometry adapter for OrbitRelay"
+
+[dependencies]
+lopdf = { version = "0.44", default-features = false }
+orbitrelay-asset.workspace = true
+orbitrelay-asset-runtime.workspace = true
+orbitrelay-document.workspace = true
+thiserror = "2"
+
+[dev-dependencies]
+async-trait = "0.1"
+bytes = "1"
+sha2 = "0.10"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync"] }

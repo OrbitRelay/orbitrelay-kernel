@@ -1,0 +1,18 @@
+[package]
+name = "orbitrelay-query"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Domain-neutral correlated Query model, registry, and executor ports for OrbitRelay"
+
+[dependencies]
+async-trait = "0.1"
+orbitrelay-protocol.workspace = true
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+
+[dev-dependencies]
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt", "sync"] }

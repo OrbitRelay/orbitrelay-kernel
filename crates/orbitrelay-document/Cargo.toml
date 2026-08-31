@@ -1,0 +1,19 @@
+[package]
+name = "orbitrelay-document"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Document, page, rotation, geometry, asset, and Canvas relationships for OrbitRelay"
+
+[dependencies]
+orbitrelay-asset.workspace = true
+orbitrelay-canvas.workspace = true
+orbitrelay-core.workspace = true
+orbitrelay-protocol.workspace = true
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+
+[dev-dependencies]
+serde_json = "1"

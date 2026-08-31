@@ -1,0 +1,43 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/orbitrelay-core",
+    "crates/orbitrelay-protocol",
+    "crates/orbitrelay-runtime",
+    "crates/orbitrelay-sync",
+    "crates/orbitrelay-storage",
+    "crates/orbitrelay-node",
+    "crates/orbitrelay-transport",
+    "crates/orbitrelay-canvas",
+    "crates/orbitrelay-canvas-runtime",
+    "crates/orbitrelay-asset",
+    "crates/orbitrelay-asset-runtime",
+    "crates/orbitrelay-document",
+    "crates/orbitrelay-document-runtime",
+    "crates/orbitrelay-query",
+    "crates/orbitrelay-pdf",
+]
+
+[workspace.package]
+version = "0.1.0-alpha"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/orbitrelay/orbitrelay-kernel"
+readme = "README.md"
+
+[workspace.dependencies]
+orbitrelay-core = { version = "=0.1.0-alpha", path = "crates/orbitrelay-core" }
+orbitrelay-protocol = { version = "=0.1.0-alpha", path = "crates/orbitrelay-protocol" }
+orbitrelay-runtime = { version = "=0.1.0-alpha", path = "crates/orbitrelay-runtime" }
+orbitrelay-sync = { version = "=0.1.0-alpha", path = "crates/orbitrelay-sync" }
+orbitrelay-storage = { version = "=0.1.0-alpha", path = "crates/orbitrelay-storage" }
+orbitrelay-node = { version = "=0.1.0-alpha", path = "crates/orbitrelay-node" }
+orbitrelay-transport = { version = "=0.1.0-alpha", path = "crates/orbitrelay-transport" }
+orbitrelay-canvas = { version = "=0.1.0-alpha", path = "crates/orbitrelay-canvas" }
+orbitrelay-canvas-runtime = { version = "=0.1.0-alpha", path = "crates/orbitrelay-canvas-runtime" }
+orbitrelay-asset = { version = "=0.1.0-alpha", path = "crates/orbitrelay-asset" }
+orbitrelay-asset-runtime = { version = "=0.1.0-alpha", path = "crates/orbitrelay-asset-runtime" }
+orbitrelay-document = { version = "=0.1.0-alpha", path = "crates/orbitrelay-document" }
+orbitrelay-document-runtime = { version = "=0.1.0-alpha", path = "crates/orbitrelay-document-runtime" }
+orbitrelay-query = { version = "=0.1.0-alpha", path = "crates/orbitrelay-query" }
+orbitrelay-pdf = { version = "=0.1.0-alpha", path = "crates/orbitrelay-pdf" }

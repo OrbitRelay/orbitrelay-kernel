@@ -1,0 +1,16 @@
+[package]
+name = "orbitrelay-asset"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Immutable asset identity, content hash, and descriptor domain for OrbitRelay"
+
+[dependencies]
+orbitrelay-core.workspace = true
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+
+[dev-dependencies]
+serde_json = "1"
